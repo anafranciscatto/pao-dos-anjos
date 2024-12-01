@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pão dos Anjos Burgers & Grill</title>
+    <link rel="stylesheet" href="/static/style-original.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Contacts</a>
+            <a href="">Info</a>
+        </nav>
+    </header>
+
+    <!-- Carrossel de imagens -->
+    <div class="carousel">
+        <!-- lista de items -->
+        <div class="list">
+            <!-- Item 01 -->
+            <div class="item">
+                <img src="/static/img/img01-grande.png">
+                <div class="content">
+                    <div class="author">Pão dos Anjos Burgers & Grill</div>
+                    <div class="title">Sacie sua fome espiritual com o </div>
+                    <div class="topic">Pão da Vida</div>
+                    <div class="des">
+                        Um hambúrguer suculento que representam a abundância da vida espiritual.
+                    </div>
+                    <div class="buttons">
+                        <button>Comprar</button>
+                        <button>Mais</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 02 -->
+            <div class="item">
+                <img src="/static/img/img02-grande.png">
+                <div class="content">
+                    <div class="author">Pão dos Anjos Burgers & Grill</div>
+                    <div class="title">Experimente um pedaço do </div>
+                    <div class="topic">céu na Terra</div>
+                    <div class="des">
+                        Um hambúrguer divino com sabores celestialmente deliciosos.
+                    </div>
+                    <div class="buttons">
+                        <button>Comprar</button>
+                        <button>Mais</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 03 -->
+            <div class="item">
+                <img src="/static/img/img03-grande.png">
+                <div class="content">
+                    <div class="author">Pão dos Anjos Burgers & Grill</div>
+                    <div class="title">A graça divina em cada mordida da</div>
+                    <div class="topic"> Graça Suprema</div>
+                    <div class="des">
+                        Um hambúrguer que transborda com a bondade e oferecendo uma experiência culinária cheia de bênçãos.
+                    </div>
+                    <div class="buttons">
+                        <button>Comprar</button>
+                        <button>Mais</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 04 -->
+            <div class="item">
+                <img src="/static/img/img04-grande.png">
+                <div class="content">
+                    <div class="author">Pão dos Anjos Burgers & Grill</div>
+                    <div class="title">O verdadeiro amor em forma de hambúrguer </div>
+                    <div class="topic">Amor Ágape</div>
+                    <div class="des">
+                        Um hambúrguer que aquece o coração com cada mordida.
+                    </div>
+                    <div class="buttons">
+                        <button>Comprar</button>
+                        <button>Mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Miniaturas -->
+        <div class="thumbnail">
+            <!-- Miniatura do item 1 -->
+            <div class="item">
+                <img src="/static/img/img01-miniatura.png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+
+            <!-- Miniatura do item 2 -->
+            <div class="item">
+                <img src="/static/img/img02-miniatura.png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+
+            <!-- Miniatura do item 3 -->
+            <div class="item">
+                <img src="/static/img/img03-miniatura.png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+
+            <!-- Miniatura do item 4 -->
+            <div class="item">
+                <img src="/static/img/img04-miniatura.png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!-- Botões de navegação -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- Exibição do tempo -->
+        <div class="time"></div>
+    </div>
+    <!-- Importa o arquivo JavaScript -->
+    <script src="/static/app.js"></script>
+    <!-- ----------------------------------------------------------------------- -->
+    <section>
+        <div class="container_txt">
+            <div class="author txt-titulo">Pão dos Anjos Burgers & Grill</div>
+            <p>"Venha experimentar o <span class="destaque" id="highlight">sabor celestial</span> que só o Pão dos Anjos pode oferecer."</p>
+        </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <section>
+        <!-- Título do menu -->
+        <div class="txt-menu">
+            <h2>MENU</h2>
+        </div>
+    
+        <!-- Opções do menu -->
+        <div class="menu-options">
+            <button class="menu-btn active" data-category="all">Todos</button>
+            <button class="menu-btn" data-category="hamburgueres">Hambúrgueres</button>
+            <button class="menu-btn" data-category="porcoes">Porções</button>
+            <button class="menu-btn" data-category="bebidas">Bebidas</button>
+        </div>
+    
+<!-- Cards de itens -->
+<div class="menu-cards">
+    <!-- Hamburgueres -->
+    <div class="card" data-category="hamburgueres">
+        <img src="/static/img/imagens/hamburguer-01.png" alt="Hambúrguer">
+        <h3>Pão da Vida</h3>
+        <p>Um hambúrguer suculento que representa a abundância da vida espiritual. Com todos os ingredientes para nutrir seu corpo e alma.</p>
+        <span>R$ 26,90</span>
+    </div>
+
+    <div class="card" data-category="hamburgueres">
+        <img src="/static/img/imagens/hamburguer-02.png" alt="Hambúrguer">
+        <h3>Céu na Terra</h3>
+        <p>Um hambúrguer divino com sabores celestialmente deliciosos, proporcionando uma experiência divina a cada mordida.</p>
+        <span>R$ 29,90</span>
+    </div>
+
+    <div class="card" data-category="hamburgueres">
+        <img src="/static/img/imagens/hamburguer-03.png" alt="Hambúrguer">
+        <h3>Graça Suprema</h3>
+        <p>Um hambúrguer que transborda com a bondade, oferecendo uma experiência culinária cheia de bênçãos espirituais e saborosas.</p>
+        <span>R$ 39,90</span>
+    </div>
+
+    <div class="card" data-category="hamburgueres">
+        <img src="/static/img/imagens/hamburguer-04.png" alt="Hambúrguer">
+        <h3>Amor Ágape</h3>
+        <p>Um hambúrguer que aquece o coração com cada mordida, simbolizando o amor incondicional de Cristo.</p>
+        <span>R$ 24,90</span>
+    </div>
+
+    <div class="card" data-category="hamburgueres">
+        <img src="/static/img/imagens/hamburguer-05.png" alt="Hambúrguer">
+        <h3>Pão Vivo</h3>
+        <p>Um hambúrguer fresco e recheado de sabores que representam a vida eterna, nutrindo o corpo e a alma com sua combinação divina.</p>
+        <span>R$ 28,90</span>
+    </div>
+
+    <div class="card" data-category="hamburgueres">
+        <img src="/static/img/imagens/hamburguer-06.png" alt="Hambúrguer">
+        <h3>Misericórdia Divina</h3>
+        <p>Uma mistura celestial de ingredientes que simbolizam a misericórdia de Deus, oferecendo um sabor que toca o coração.</p>
+        <span>R$ 32,90</span>
+    </div>
+
+    <div class="card" data-category="hamburgueres">
+        <img src="/static/img/imagens/hamburguer-07.png" alt="Hambúrguer">
+        <h3>Cruz Sagrada</h3>
+        <p>Hambúrguer robusto e cheio de personalidade, assim como a cruz, trazendo um sabor forte e marcante, perfeito para quem busca uma experiência única.</p>
+        <span>R$ 35,90</span>
+    </div>
+
+    <div class="card" data-category="hamburgueres">
+        <img src="/static/img/imagens/hamburguer-08.png" alt="Hambúrguer">
+        <h3>Alimento Celestial</h3>
+        <p>Hambúrguer com ingredientes selecionados para proporcionar uma refeição digna dos anjos, com o sabor e a leveza que lembram o alimento espiritual.</p>
+        <span>R$ 30,90</span>
+    </div>
+
+    <!-- Porções -->
+    <div class="card" data-category="porcoes">
+        <img src="/static/img/imagens/Porções-01.png" alt="Batata">
+        <h3>Festa do Banquete</h3>
+        <p>Porção crocante de batatas, perfeita para celebrar a abundância das bênçãos que Deus nos oferece.</p>
+        <span>R$ 14,90</span>
+    </div>
+
+    <div class="card" data-category="porcoes">
+        <img src="/static/img/imagens/Porções-02.png" alt="Batata">
+        <h3>Maná Celestial</h3>
+        <p>Uma porção especial de batatas douradas, com um toque de salvação, que só a mão divina poderia preparar.</p>
+        <span>R$ 18,90</span>
+    </div>
+
+    <!-- Bebidas -->
+    <div class="card" data-category="bebidas">
+        <img src="/static/img/imagens/Porções-02 (2).png" alt="Refrigerante">
+        <h3>Água Viva</h3>
+        <p>Refrigerante gelado, para saciar sua sede de maneira refrescante e celestial.</p>
+        <span>R$ 5,90</span>
+    </div>
+
+    <div class="card" data-category="bebidas">
+        <img src="/static/img/imagens/Porções-02 (3).png" alt="Refrigerante">
+        <h3>Vinho da Aliança</h3>
+        <p>Uma bebida que refresca e renova a aliança com Cristo, com sabor suave e refrescante.</p>
+        <span>R$ 7,90</span>
+    </div>
+</div>
+    </section>
+    <!-- --------------- -->
+
+    <section>
+        <div class="container-baner"></div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2024 Pão dos Anjos Burgers & Grill - Todos os direitos reservados.</p>
+                <p>Somos uma hamburgueria cristã, oferecendo uma experiência celestial em cada mordida.</p>
+            </div>
+            <div class="footer-social">
+                <p>Siga-nos nas redes sociais:</p>
+                <a href="https://facebook.com" target="_blank">Facebook</a> | 
+                <a href="https://instagram.com" target="_blank">Instagram</a> | 
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

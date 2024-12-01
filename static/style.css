@@ -1,0 +1,231 @@
+body {
+    margin: 0; /* Remove margens padrão */
+    padding: 0;
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+}
+
+
+.container-01{
+   
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.banner{
+    background-color:#f1683a;
+    width: 460px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+.banner img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+    transition: transform 0.3s ease; /* Adicionando transição para o efeito de zoom */
+}
+.banner:hover img {
+    transform: scale(0.9); /* Aplicando um aumento de escala de 10% quando o banner está em hover */
+    border-radius: 15px ;
+}
+.conteudo{
+    width: 50%;
+    height: 100%;
+}
+.conteudo button{
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    color: #eee;
+    cursor: pointer;
+}
+
+/* ----------- */
+.container-promo{
+    
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 33px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.container-promo__cont{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-promo__cont img{
+    width: 100px;
+}
+/* section 02 */
+.container_txt{
+    width: 100vw;
+    height: 100px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px;
+}
+.txt-titulo{
+    font-size: 15px;
+    word-wrap: break-word; /* Força a quebra de palavras longas */
+    overflow-wrap: break-word; /* Alternativa moderna */
+}
+.container_txt p{
+    text-align: center;
+    font-size: 20px;
+    word-wrap: break-word; /* Força a quebra de palavras longas */
+    overflow-wrap: break-word; /* Alternativa moderna */
+}
+/* ---- */
+.txt-menu{
+    max-width: 900px;
+    height: 50px;
+    margin: 0 auto;
+    padding-left: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Botões de categoria */
+.menu-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.menu-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-btn.active {
+    background-color: #e63946; /* Destaque da opção selecionada */
+}
+
+.menu-btn:hover {
+    background-color: #555;
+}
+
+/* Cards */
+.menu-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #1c1c1c;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /* Todos os cards ficam escondidos inicialmente */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.card span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e63946;
+}
+.menu-btn.active {
+    background-color: #e63946; /* Cor de fundo para a opção ativa */
+}
+/* Estilo para os botões ativos */
+.menu-btn.active {
+    background-color: #e63946; /* Cor de fundo da opção ativa */
+    color: #fff; /* Cor do texto quando ativo */
+    border: 2px solid #ffffff6e; /* Borda branca para destacar */
+}
+
+/* Botões padrão (não ativos) */
+.menu-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Efeito de hover para os botões */
+.menu-btn:hover {
+    background-color: #555;
+}
+/* -------------------- */
+.container-baner{
+    width: 100vw;
+    height: 300px;
+    background-image: url('/static/img/baner.png');
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-size: cover; /* Faz a imagem cobrir toda a área da div */
+    background-position: center; /* Centraliza a imagem */
+    height: 400px; /* Altura da div (ajuste conforme necessário) */
+}
+/* --------------- */
+footer {
+    color: #fff; /* Texto branco */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 30px 0; /* Espaçamento superior e inferior */
+}
+
+.footer-content {
+    max-width: 1000px; /* Limita a largura do rodapé */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 10px;
+}
+
+.footer-info p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer-social a {
+    color: #fff; /* Cor dos links */
+    margin: 0 10px;
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.footer-social a:hover {
+    color: #ffd700; /* Cor dourada ao passar o mouse */
+}
