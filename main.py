@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, redirect, url_for, session, jsonify
 app = Flask(__name__)
 
+
 # Rota para a página inicial
 @app.route('/')
 def index():
